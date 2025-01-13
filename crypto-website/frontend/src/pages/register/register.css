@@ -1,0 +1,83 @@
+/* styles/Register.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #14161A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(145deg, #0D0F14, #181B20);
+}
+
+.register-card {
+    background-color: #1E2026;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 360px;
+}
+
+.register-logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.register-card h1 {
+    font-size: 20px;
+    color: #F0B90B;
+    margin-bottom: 20px;
+}
+
+.register-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #14161A;
+    color: #E0E0E0;
+}
+
+.register-card input::placeholder {
+    color: #888;
+}
+
+.register-card .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #F0B90B;
+    color: #14161A;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-card .register-button:hover {
+    background-color: #C99908;
+}
+
+.redirect-login {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+.redirect-login span {
+    color: #F0B90B;
+    cursor: pointer;
+    text-decoration: underline;
+}

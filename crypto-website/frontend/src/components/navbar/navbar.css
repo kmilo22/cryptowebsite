@@ -1,0 +1,109 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #1E2026; /* Fondo oscuro */
+    color: #E0E0E0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F0B90B; /* Amarillo tipo Binance */
+}
+
+.navbar-search {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    max-width: 350px;
+    margin: 0 20px;
+}
+
+.navbar-search input {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #14161A;
+    color: #E0E0E0;
+    font-size: 14px;
+}
+
+.search-dropdown {
+    position: absolute;
+    top: 45px; /* Alinea el menú justo debajo del campo */
+    left: 0;
+    background-color: #1E2026;
+    border: 1px solid #333;
+    border-radius: 6px;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.search-dropdown li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #E0E0E0;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.2s ease;
+}
+
+.search-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.search-dropdown li:hover {
+    background-color: #292B30;
+}
+
+.search-dropdown span {
+    font-weight: bold;
+    color: #F0B90B; /* Destacar el símbolo */
+}
+
+.search-dropdown small {
+    font-size: 12px;
+    color: #888; /* Nombre en gris */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links button {
+    background: none;
+    border: none;
+    color: #F0B90B;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar-links button:hover {
+    color: #C99908;
+}

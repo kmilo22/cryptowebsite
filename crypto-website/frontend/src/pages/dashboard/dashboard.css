@@ -1,0 +1,88 @@
+/* Contenedor principal del dashboard */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 60px auto 0 auto; /* Espacio para la navbar fija */
+    height: calc(100vh - 60px); /* Ajusta para no superponer con la navbar */
+    margin-top: 60px; /* Deja espacio para la navbar fija */
+    box-sizing: border-box; /* Asegura que el padding no desborde */
+    padding: 20px;
+    background-color: #14161A;
+    border-radius: 8px;
+    color: #E0E0E0;
+    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding no desborde */
+}
+
+/* Tabla de criptos */
+.crypto-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    cursor: pointer;
+    color: #E0E0E0;
+}
+
+.crypto-table th, .crypto-table td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+.crypto-table th {
+    background-color: #1F2226; /* Color del encabezado */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.crypto-table tr:nth-child(even) {
+    background-color: #1A1D22;
+}
+
+.crypto-table tr:hover {
+    background-color: #24282E;
+}
+
+/* Selector de monedas */
+.currency-selector {
+    margin-bottom: 20px;
+}
+.crypto-table .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Gráfico */
+.chart-container {
+    margin-top: 40px;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    height: 400px; /* Altura fija o ajustable */
+    display: flex; /* Alineación del contenido */
+    justify-content: center; /* Centra el gráfico horizontalmente */
+    align-items: center; /* Centra el gráfico verticalmente */
+}
+
+
+.crypto-table .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #F0B90B;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.crypto-table .actions button:hover {
+    color: #C99908; /* Cambia el color al pasar el cursor */
+}
+
+/* Cambio porcentual */
+.crypto-table .positive {
+    color: #00C853; /* Verde para valores positivos */
+}
+
+.crypto-table .negative {
+    color: #D50000; /* Rojo para valores negativos */
+}

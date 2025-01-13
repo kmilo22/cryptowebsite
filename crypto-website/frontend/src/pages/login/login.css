@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #14161A; /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(145deg, #0D0F14, #181B20);
+}
+
+.login-card {
+    background-color: #1E2026;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 360px;
+}
+
+.login-logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-card h2 {
+    font-size: 20px;
+    color: #F0B90B;
+    margin-bottom: 20px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #14161A;
+    color: #E0E0E0;
+}
+
+.login-card input::placeholder {
+    color: #888;
+}
+
+.login-card .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #F0B90B;
+    color: #14161A;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-card .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #F0B90B;
+    color: #14161A;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-card .login-button:hover {
+    background-color: #C99908;
+}
+
+.divider {
+    margin: 20px 0;
+    color: #888;
+    position: relative;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #333;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+
+
+.google-login {
+    background-color: #4285F4;
+    color: white;
+}
+
+.google-login:hover {
+    background-color: #357AE8;
+}
+
+.apple-login {
+    background-color: #000;
+    color: white;
+}
+
+.apple-login:hover {
+    background-color: #333;
+}
+
+.error-message {
+    color: #FF4D4D;
+    margin: 10px 0;
+}

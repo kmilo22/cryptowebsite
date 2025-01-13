@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Precios de Criptomonedas</h1>
+    <form action="/search" method="GET">
+        <label for="symbols">Ingrese los símbolos de criptomonedas (separados por comas):</label><br>
+        <input type="text" id="symbols" name="symbols" placeholder="Ej: BTC,ETH,LTC">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Resultados:</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Criptomoneda</th>
+                <th>Precio (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (prices) { %>
+                <% for (const [symbol, data] of Object.entries(prices)) { %>
+                    <tr>
+                        <td><%= symbol %></td>
+                        <td>$<%= data.USD %></td>
+                    </tr>
+                <% } %>
+            <% } else { %>
+                <tr>
+                    <td colspan="2">No hay datos disponibles.</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>
